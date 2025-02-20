@@ -4,7 +4,7 @@ function getSystemTheme() {
 }
 
 // On page load, check for stored theme in localStorage or fallback to default
-let savedTheme = localStorage.getItem('theme') || 'dark';  // Default to 'dark' if no saved preference
+let savedTheme = localStorage.getItem('theme') || 'light';  // Default to 'light' if no saved preference
 
 // If the theme is 'auto', detect the system's theme
 if (savedTheme === 'auto') {

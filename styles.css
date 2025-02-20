@@ -60,7 +60,7 @@ main {
 /* Ensuring the container doesn't push content down */
 .toggle-container {
   position: absolute;
-  top: 1%;
+  top: 2%;
   left: 45%;
   z-index: 10;
 }
