@@ -43,7 +43,7 @@ const nearMapAerialLayer = {
     source: 'Nearmap_Source',
     type: 'raster',
     paint: {
-      'raster-opacity': ['interpolate', ['exponential', 1.5], ['zoom'], 15, 0, 17, 1],
+      'raster-opacity': ['interpolate', ['exponential', 1.5], ['zoom'], 16, 0, 18, 1],
     },
     layout: {
       visibility: 'visible',
