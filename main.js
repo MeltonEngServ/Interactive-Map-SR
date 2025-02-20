@@ -36,7 +36,7 @@ const map = new mapboxgl.Map({
 });
 
 // Define the Nearmap aerial layer
-const nearmapAPIKey = 'MTQyNWJjZGQtNjBlZi00Yjc2LWI2N2YtYWQzYjczNmM3Njlk';
+const nearmapAPIKey = 'NzQ1Y2MzYjItYzc0NC00NWU5LTk2YmMtZTYxMWNiNTgxOGI5';
 
 const nearMapAerialLayer = {
     id: 'Nearmap_Layer',
