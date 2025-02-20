@@ -1,0 +1,199 @@
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: none;
+  overflow-y: none;
+}
+
+
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+  z-index: 1;
+}
+
+.bd-mode-toggle {
+  z-index: 1;
+}
+
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Suburb/wards view toggle styling */
+
+/* Ensuring the container doesn't push content down */
+.toggle-container {
+  position: absolute;
+  top: 1%;
+  left: 45%;
+  z-index: 10;
+}
+
+/* Toggle button styling */
+.toggle-button {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Styling for each option */
+.toggle-option {
+  flex: 1;
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  transition: opacity 0.3s ease-in-out;
+  color: #333;
+}
+
+/* Suburb option */
+.toggle-option.suburb {
+  background: #f0f0f0;
+  opacity: 1;
+}
+
+/* Ward option */
+.toggle-option.ward {
+  background: #fff;
+  opacity: 0.5;
+}
+
+/* When toggle is active */
+.toggle-button.active .suburb {
+  opacity: 0.5;
+}
+
+.toggle-button.active .ward {
+  opacity: 1;
+}
+
+
+#map { 
+  position: absolute; 
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+
+#searchBar {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: var(--search-bar-bg);
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#address {
+  width: 100%;
+  padding: 4px;
+  font-size: 12px;
+  border: 1px solid var(--search-bar-border); 
+  border-radius: 5px;
+  z-index: 1;
+  color: var(--search-bar-text);
+  box-sizing: border-box;
+}
+
+#address:focus {
+  outline: none;
+  border: 1px solid transparent;
+}
+
+
+/* Switch Styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
